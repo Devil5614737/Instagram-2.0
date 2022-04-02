@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fafafa;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button, input, textarea {
+  font: inherit;
+  display: block;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.loginMain .container {
+  padding: 3em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginMain .container .imageContainer {
+  width: 431px;
+  height: 582px;
+  position: relative;
+  background-image: url("https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 876px) {
+  .loginMain .container .imageContainer {
+    display: none;
+  }
+}
+
+.loginMain .container .imageContainer .imageOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -158px;
+  top: 24px;
+  background-repeat: no-repeat;
+  -webkit-animation-name: overlay;
+          animation-name: overlay;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.loginMain .container .cardContainer {
+  position: relative;
+  z-index: 2;
+  margin-top: 15px;
+  margin-left: 22px;
+  width: 350px;
+  height: 340px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+
+.loginMain .container .cardContainer .logo {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 33px;
+}
+
+.loginMain .container .cardContainer .logo img {
+  width: 175px;
+  height: 51px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.loginMain .container .cardContainer .inputContainer {
+  margin-top: 22px;
+  padding: 1em 4em;
+}
+
+.loginMain .container .cardContainer .inputContainer .input {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  font-size: 1.6rem;
+  padding-left: .3em;
+}
+
+.loginMain .container .cardContainer .loginBtnContainer {
+  padding: 1em 4em;
+}
+
+.loginMain .container .cardContainer .loginBtnContainer .btn {
+  width: 100%;
+  padding: .5em 0;
+  color: white;
+  background-color: #0095f6;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.loginMain .container .cardContainer .signupContainer {
+  border: 1px solid #dbdbdb;
+  padding: 2em 0em;
+  margin-top: 66px;
+  background-color: #fff;
+}
+
+.loginMain .container .cardContainer .signupContainer p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.loginMain .container .cardContainer .signupContainer p span {
+  font-weight: bold;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+@-webkit-keyframes overlay {
+  0% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot2.png/4d62acb667fb.png");
+  }
+  25% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot1.png/fdfe239b7c9f.png");
+  }
+  50% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png");
+  }
+  75% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot4.png/a4fd825e3d49.png");
+  }
+  100% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png");
+  }
+}
+
+@keyframes overlay {
+  0% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot2.png/4d62acb667fb.png");
+  }
+  25% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot1.png/fdfe239b7c9f.png");
+  }
+  50% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png");
+  }
+  75% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot4.png/a4fd825e3d49.png");
+  }
+  100% {
+    background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png");
+  }
+}
+/*# sourceMappingURL=login.css.map */

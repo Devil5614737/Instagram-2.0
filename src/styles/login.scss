@@ -1,0 +1,117 @@
+@import "global";
+@import "variables";
+
+
+.loginMain{
+    .container{
+        padding: 3em 1em;
+        display: flex;
+        justify-content: center;
+        .imageContainer{
+            width: 431px;
+            height: 582px;
+            position: relative;
+            background-image: url("https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png");
+            object-fit: cover;
+       @media screen and (max-width:876px) {
+           display: none;
+       }
+            .imageOverlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                right: -158px;
+                top: 24px;
+                background-repeat: no-repeat;
+                animation-name: overlay;
+                animation-iteration-count: infinite;
+                animation-duration: 9s;
+                // animation-delay: 3s;
+               animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+        }
+        .cardContainer{
+            position: relative;
+            z-index: 2;
+            margin-top: 15px;
+            margin-left: 22px;
+            width: 350px;
+            height: 340px;
+            border: 1px solid #dbdbdb;
+            background-color: #fff;
+            .logo{
+                display: grid;
+                place-items: center;
+                margin-top: 33px;
+                img{
+                    width: 175px;
+                    height: 51px;
+                    object-fit: contain;
+                }
+            }
+            .inputContainer{
+                margin-top: 22px;
+                padding: 1em 4em;
+                .input{
+                    margin-bottom: 12px;
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: 1px solid #dbdbdb;
+                    font-size: 1.6rem;
+                    padding-left: .3em;
+                }
+            }
+            .loginBtnContainer{
+                padding: 1em 4em;
+                .btn{
+                    width: 100%;
+                    padding:.5em 0;
+                    color: white;
+                    background-color: $blue;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+            .signupContainer{
+                border: 1px solid #dbdbdb;
+                padding: 2em 0em;
+                margin-top: 66px;
+                background-color: #fff;
+                p{
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    span{
+                        font-weight: bold;
+                        color: $blue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes overlay {
+    0%{
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot2.png/4d62acb667fb.png"); 
+    }
+    25%{
+        
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot1.png/fdfe239b7c9f.png");
+    }
+    50%{
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png");
+    }
+    75%{
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot4.png/a4fd825e3d49.png");
+    }
+    100%{
+        background-image: url("https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png");
+    }
+}

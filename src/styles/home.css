@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fafafa;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button, input, textarea {
+  font: inherit;
+  display: block;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1321;
+}
+
+.navbar .navbarContainer {
+  padding: 1.4em 15%;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar .navbarContainer {
+    padding: 1.4em 2em;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .navbar .navbarContainer {
+    padding: 1.4em 2em;
+  }
+}
+
+.navbar .navbarContainer .logo {
+  width: 103px;
+  height: 29px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+.navbar .navbarContainer .searchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  width: 260px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #efefef;
+  border: none;
+  padding: 0 2em;
+}
+
+@media screen and (max-width: 641px) {
+  .navbar .navbarContainer .searchContainer {
+    display: none;
+  }
+}
+
+.navbar .navbarContainer .searchContainer input {
+  padding: 0em 0.5em;
+  width: 100%;
+  height: 25px;
+  background-color: #efefef;
+  border: none;
+  font-size: 1.6rem;
+}
+
+.navbar .navbarContainer .searchContainer input:focus {
+  outline: none;
+}
+
+.navbar .navbarContainer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbarContainer .links .userAvatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 12px;
+}
+
+.main .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 600px 400px;
+      grid-template-columns: 600px 400px;
+  grid-column-gap: 14px;
+  padding: 1.4em 15%;
+}
+
+@media screen and (max-width: 950px) {
+  .main .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0 2em;
+  }
+}
+
+.main .container .grid1 .statusBar {
+  background-color: white;
+  border: 1px solid;
+  border: 1px solid #dbdbdb;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .container .grid1 .statusBar .status {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border: 2px solid hotpink;
+  margin-left: 12px;
+}
+
+.main .container .grid1 .statusBar .status img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.main .container .grid1 .postContainer {
+  margin-top: 12px;
+}
+
+.main .container .grid2 {
+  width: 300px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 105px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 950px) {
+  .main .container .grid2 {
+    display: none;
+  }
+}
+
+.main .container .grid2 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .container .grid2 .top .topImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .container .grid2 .top .topImage img {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .container .grid2 .top .topImage p {
+  font-weight: medium;
+  font-size: 1.4rem;
+  margin-left: 9px;
+  color: black;
+}
+
+.main .container .grid2 .top p {
+  color: #0095f6;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main .container .grid2 .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+}
+
+.main .container .grid2 .center p {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.cardContainer .card {
+  position: relative;
+  margin-bottom: 52px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+}
+
+.cardContainer .card .cardTop {
+  padding: 1.7em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer .card .cardTop .topLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer .card .cardTop .topLeft img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+.cardContainer .card .cardTop .topLeft p {
+  font-size: 1.8rem;
+  margin-left: 12px;
+}
+
+.cardContainer .card .cardTop .topRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.cardContainer .card .cardTop .topRight .dot {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 100%;
+  margin-left: 4px;
+}
+
+.cardContainer .card img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardContainer .card .cardBottom {
+  padding: 1em;
+}
+
+.cardContainer .card .cardBottom .cardIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer .card .cardBottom .cardIcons .iconLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardContainer .card .cardBottom .likesCount {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 12px;
+}
+
+.cardContainer .card .cardBottom .postTitles {
+  margin-top: 12px;
+}
+
+.cardContainer .card .cardBottom .postTitles .username {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cardContainer .card .cardBottom .postTitles .username span {
+  font-weight: 500;
+  margin-left: 7px;
+}
+
+.cardContainer .card .cardBottom .commentsContainer {
+  margin-top: 5px;
+  overflow-y: auto;
+  height: 50px;
+}
+
+.cardContainer .card .cardBottom .commentsContainer p {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.cardContainer .card .cardBottom .commentsContainer .username {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: unset;
+}
+
+.cardContainer .card .cardBottom .commentsContainer .username span {
+  font-weight: 500;
+  margin-left: 7px;
+}
+
+.cardContainer .card .cardBottom .addComment {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer .card .cardBottom .addComment input {
+  width: 100%;
+  height: 40px;
+  font-size: 1.5rem;
+  padding-left: .3em;
+}
+
+.cardContainer .card .cardBottom .addComment .commentBtn {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  margin-left: 12px;
+}
+
+.uploadModal {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 312;
+  border: none;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.uploadModal textarea {
+  width: 100%;
+  resize: none;
+  height: 200px;
+  border: none;
+  font-size: 1.5rem;
+  padding: .6em;
+}
+
+.uploadModal textarea:focus {
+  outline: none;
+}
+
+.uploadModal label p {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.uploadModal input {
+  display: none;
+}
+
+.uploadModal .btnContainer {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uploadModal .btnContainer button {
+  margin-right: 12px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border: none;
+  padding: .2em 1em;
+}
+
+.logoutModal {
+  background-color: white;
+  width: 200px;
+  position: absolute;
+  right: 120px;
+  top: 90px;
+  padding: .6em;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: none;
+}
+
+.logoutModal::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-color: white;
+  top: -10px;
+  left: 50%;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logoutModal p {
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.logoutModal p:hover {
+  text-decoration: underline;
+}
+
+.logoutModal.active {
+  display: block;
+}
+
+.heart {
+  fill: black;
+}
+
+.heart.active {
+  fill: red;
+}
+/*# sourceMappingURL=home.css.map */
